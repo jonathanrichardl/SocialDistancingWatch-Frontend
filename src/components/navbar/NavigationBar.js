@@ -1,4 +1,5 @@
 import {AppBar, Toolbar, IconButton} from '@mui/material';
+import {Link} from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import Typography from '@mui/material/Typography';
@@ -8,10 +9,10 @@ function Navbar({openMenu}){
     return(
         <AppBar position="static">
             <Toolbar variant="dense">
-                <IconButton edge="start" color="inherit" aria-label="menu" onClick={()=>openMenu(true)}>
+                <IconButton  edge="start" color="inherit" aria-label="menu" onClick={()=>openMenu(true)}>
                     <MenuIcon/>
                 </IconButton>
-                <IconButton edge="start" color="inherit" aria-label="menu">
+                <IconButton component={Link} to="/components/Home"  edge="start" color="inherit" aria-label="Home">
                     <HomeIcon/>
                 </IconButton>
                 <Typography variant="h7" component="div">

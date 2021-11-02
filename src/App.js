@@ -1,30 +1,29 @@
-import logo from './logo.svg';
 import Navbar from './components/navbar/NavigationBar.js';
-import Drawer from '@mui/material/Drawer';
+import {Drawer,IconButton} from '@mui/material';
+import About from './components/About/About.js';
+import Home from './components/Home/Home.js';
+import MenuItem from './components/MenuItem/MenuItem.js';
+import DataDisplay from './components/DataDisplay/DataDisplay.js';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import {useState} from 'react';
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="App">
+    <Router>
       <Navbar openMenu={setMenuOpen}/>
       <Drawer anchor="left" open={isMenuOpen} onClose={()=> setMenuOpen(false)}>
-        Menus here
+        <MenuItem/>
       </Drawer>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Switch>
+          <Route path='/components/About'>
+            <About lala={'lalu'}/>
+          </Route>
+          <Route path='/components/Home'>
+            <Home/>
+          </Route>
+          <Route path='/components/DataDisplay' component={DataDisplay}/>
+        </Switch>
+    </Router>
   );
 }
 
