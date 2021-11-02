@@ -1,0 +1,15 @@
+.panels{
+    margin: 8px;
+    width:  256px;
+    height: 128px;
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-flex;
+}
+.topbar{
+    height:260px;
+    width:90%;
+    overflow: auto;
+    display: inline-flex;
+    flex-direction: row;
+}
