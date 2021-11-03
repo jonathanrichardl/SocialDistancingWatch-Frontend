@@ -5,6 +5,7 @@ import Home from './components/Home/Home.js';
 import MenuItem from './components/MenuItem/MenuItem.js';
 import DataDisplay from './components/DataDisplay/DataDisplay.js';
 import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom';
+//testtestdoang
 import {useState} from 'react';
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
