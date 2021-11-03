@@ -6,6 +6,9 @@ import MenuItem from './components/MenuItem/MenuItem.js';
 import DataDisplay from './components/DataDisplay/DataDisplay.js';
 import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom';
 import {useState} from 'react';
+
+
+//spsekek
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
