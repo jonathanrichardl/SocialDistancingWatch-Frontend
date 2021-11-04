@@ -15,7 +15,7 @@ function Navbar({openMenu}){
                 <IconButton component={Link} to="/components/Home"  edge="start" color="inherit" aria-label="Home">
                     <HomeIcon/>
                 </IconButton>
-                <Typography variant="h7" component="div">
+                <Typography variant="h6" component="div">
                     Social Distancing App
                 </Typography>
             </Toolbar>
