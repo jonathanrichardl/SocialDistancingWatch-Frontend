@@ -1,4 +1,4 @@
-import {AppBar, Toolbar, IconButton} from '@mui/material';
+import {AppBar, Toolbar, IconButton, ButtonBase} from '@mui/material';
 import {Link} from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
@@ -15,9 +15,11 @@ function Navbar({openMenu}){
                 <IconButton component={Link} to="/components/Home"  edge="start" color="inherit" aria-label="Home">
                     <HomeIcon/>
                 </IconButton>
-                <Typography variant="h6" component="div">
-                    Social Distancing App
-                </Typography>
+                <ButtonBase variant="text" component={Link} to="/components/Home">
+                    <Typography variant="h6" component="div">
+                        Social Distancing App
+                    </Typography>
+                </ButtonBase>
             </Toolbar>
         </AppBar>
     );

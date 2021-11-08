@@ -1,18 +1,14 @@
 
 import React from 'react'
-import { Paper } from '@mui/material';
+import DataItem from "./DataItem.js"
 import "./Home.css"
-function Home(){
-
+function Home({data}){
+    const papers=data.map(item=>(
+        <DataItem kelas={item.kelas} violation={item.violation} timestamp={item.timestamp}/>
+    ));
     return(
         <div className={"topbar"}>
-            <Paper elevation={2} className={"panels"} >
-                test paper
-            </Paper>
-            <Paper elevation={2} className={"panels"}>
-                test 2
-            </Paper>
-            <Paper elevation={2} className={"panels"}/>
+            {papers}
         </div>
     );  
 }
