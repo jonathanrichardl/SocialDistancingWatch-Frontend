@@ -7,7 +7,7 @@ function Pict({data}){
     return(
         <Paper elevation={2} className={'frame'}>
             <Typography variant="body1" component="div">
-                Ngantuk boi {data[0].kelas}
+                {data[0].kelas}
             </Typography>
             <img src={"/samoyed.jpg"} alt={'cute dog'} className={'picture'}/>
         </Paper>

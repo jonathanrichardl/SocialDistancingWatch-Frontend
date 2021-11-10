@@ -15,7 +15,9 @@ function App() {
 
   const mockdata=[{kelas: "X MIPA I", violation: 10, timestamp: "10:15"},
                   {kelas: "X MIPA II", violation: 5, timestamp: "10:20"},
-                  {kelas: "XI MIPA I", violation: 2, timestamp: "10:12"}];
+                  {kelas: "XI MIPA I", violation: 2, timestamp: "10:12"},
+                  {kelas: "XII MIPA I", violation: 120, timestamp: "10:12"},
+                  {kelas: "X MIPA iI", violation: 5, timestamp: "10:12"}];
   return (
     <Router>
       <Navbar openMenu={setMenuOpen}/>
@@ -31,6 +33,9 @@ function App() {
             <Home data={mockdata}/>
           </Route>
           <Route path='/components/DataDisplay' component={DataDisplay}/>
+          <Route path='/'>
+            <Home data={mockdata}/>
+          </Route>
       </Switch>
     </Router>
   );
