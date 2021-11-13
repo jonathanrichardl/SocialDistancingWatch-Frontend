@@ -2,6 +2,7 @@ import {AppBar, Toolbar, IconButton, ButtonBase} from '@mui/material';
 import {Link} from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
+import HomeIcon from '@mui/icons-material/Home';
 //buatganti
 function Navbar({openMenu}){
     
