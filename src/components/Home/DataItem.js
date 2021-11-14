@@ -8,10 +8,10 @@ function DataItem({kelas, violation, timestamp}){
                 {kelas}   
             </Typography>
             <Typography variant="subtitle2" component="div">
-                {violation}  
+                Data pelanggaran : {violation}  
             </Typography>
             <Typography variant="body2" component="div">
-                {timestamp}    
+                Last Update : {timestamp}    
             </Typography>
         </Paper>
     );
