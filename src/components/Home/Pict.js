@@ -13,10 +13,11 @@ function Pict({data,timestamp}){
             <Typography variant="body1" component="div">
                 {data[0].kelas}
             </Typography>
-            <img src={"/samoyed.jpg"} alt={'cute dog'} className={'picture'}/>
             <Typography variant="body2" component="div">
                 Last Update : {timestamp}    
             </Typography>
+            <img src={"/samoyed.jpg"} alt={'cute dog'} className={'picture'}/>
+            
         </Paper>
     );
 }
