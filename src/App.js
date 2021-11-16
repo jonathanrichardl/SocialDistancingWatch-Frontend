@@ -33,7 +33,6 @@ function App() {
             <Home data={mockdata}/>
           </Route>
           <Route path='/components/DataDisplay' component={DataDisplay}/>
-            <DataDisplay data={mockdata}/>
           <Route path='/'>
             <Home data={mockdata}/>
           </Route>
