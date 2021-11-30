@@ -13,11 +13,11 @@ import {useState} from 'react';
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
-  const mockdata=[{kelas: "X MIPA I", violation: 10, timestamp: "10:15"},
-                  {kelas: "X MIPA II", violation: 5, timestamp: "10:20"},
-                  {kelas: "XI MIPA I", violation: 2, timestamp: "10:12"},
-                  {kelas: "XII MIPA I", violation: 120, timestamp: "10:12"},
-                  {kelas: "X MIPA iI", violation: 5, timestamp: "10:12"}];
+  const mockdata=[{kelas: "X MIPA I", violation: 10, timestamp: "10:15", gambar: '/samoyed.jpg'},
+                  {kelas: "X MIPA II", violation: 5, timestamp: "10:20", gambar: '/contohkelas1.jpg'} ,
+                  {kelas: "XI MIPA I", violation: 2, timestamp: "10:12", gambar: '/contohkelas2.jpg'},
+                  {kelas: "XII MIPA I", violation: 120, timestamp: "10:12", gambar: '/contohkelas3.jpg'},
+                  {kelas: "X MIPA iI", violation: 5, timestamp: "10:12", gambar: '/contohkelas2.jpg'}];
   return (
     <Router>
       <Navbar openMenu={setMenuOpen}/>

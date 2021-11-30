@@ -1,5 +1,10 @@
 .frame{
     display: block;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 .picture{
     width:80%;
@@ -16,4 +21,6 @@
     margin-right:auto;
     align-content: center;
     align-items: center;
+    text-align: center;
+    justify-content: center;
 }
