@@ -12,7 +12,7 @@ function Navbar({openMenu}){
                     <MenuIcon/>
                 </IconButton>
                 <ButtonBase variant="text" component={Link} to="/">
-                    <Typography variant="h6" component="div">
+                    <Typography variant="h5" component="div" fontWeight='bold'>
                         Social Distancing App
                     </Typography>
                 </ButtonBase>
