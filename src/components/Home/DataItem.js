@@ -8,7 +8,7 @@ function DataItem({kelas, violation, timestamp}){
                 {kelas}   
             </Typography>
             <Typography variant="subtitle2" component="div">
-                Data pelanggaran : {violation}  
+                Jumlah pelanggaran : {violation}  
             </Typography>
             <Typography variant="body2" component="div">
                 Last Update : {timestamp}    
