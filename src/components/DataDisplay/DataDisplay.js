@@ -12,7 +12,7 @@ function DataDisplay({kelas, violation, timestamp}){
                     {kelas}   
                 </Typography>
                 <Typography variant="subtitle2" component="div">
-                Data Pelanggaran : {violation}  
+                Jumlah Pelanggaran : {violation}  
             </Typography>
                 <Typography variant="body2" component="div">
                     Last Update : {timestamp}    
