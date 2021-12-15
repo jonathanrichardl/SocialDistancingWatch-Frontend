@@ -21,7 +21,7 @@ function App() {
                   {kelas: "X MIPA iI", violation: 5, timestamp: "10:12", gambar: '/contohkelas2.jpg'}];*/
   useEffect(() => {
     const id = setInterval(() => 
-      fetch("http://localhost:8080/X%20IPA%1")
+      fetch("http://localhost:8080/X%20IPA%201")
         .then(function(response) {
             if (response.status !== 200) {
             console.log(
@@ -32,6 +32,8 @@ function App() {
             console.log(datanya[0]);
             setData(datanya);
           });
+        }).catch(function(err){
+          console.log(err);
         })
     , 1000);
   
