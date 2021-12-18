@@ -6,15 +6,14 @@ import InfoIcon from '@mui/icons-material/Info';
 import StorageIcon from '@mui/icons-material/Storage';
 import { Link } from 'react-router-dom';
 function MenuItem(){
-
-    return(
-        <List>
-        <ListItem component={Link} to='/components/DataDisplay' button key={'DataDisplay'}>
+    /*        <ListItem component={Link} to='/components/DataDisplay' button key={'DataDisplay'}>
           <ListItemIcon>
             <StorageIcon/>
           </ListItemIcon>
           <ListItemText primary={'Data Display'} />
-        </ListItem>
+        </ListItem>*/
+    return(
+        <List>
         <ListItem component={Link} to='/components/About' button key={'About'}>
           <ListItemIcon>
             <InfoIcon/>
