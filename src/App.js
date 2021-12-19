@@ -12,7 +12,7 @@ import {useState,useEffect} from 'react';
 //spsekek
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [data, setData] = useState([{kelas: "Loading", violation: "Loading", timestamp: "Loading", gambar: '/samoyed.jpg'}]);
+  const [data, setData] = useState([{kelas: "Loading", violation: "Loading", timestamp: "Loading", gambar: '/loading.png'}]);
 
   /*const mockdata=[{kelas: "X MIPA I", violation: 10, timestamp: "10:15", gambar: '/samoyed.jpg'},
                   {kelas: "X MIPA II", violation: 5, timestamp: "10:20", gambar: '/contohkelas1.jpg'} ,
