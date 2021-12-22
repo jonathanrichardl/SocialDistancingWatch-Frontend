@@ -13,7 +13,7 @@ function Pict({data,timestamp}){
                 Gambar Pelanggaran
             </Typography>
             <Typography variant="body2" component="div">
-                Last Update : {timestamp}    
+                Last Update : {data[idxGambar].timestamp}    
             </Typography>
             <img src={data[idxGambar].gambar} alt={'detection result'} className={'picture'}/>
             <div className={'buttombuttons'}>
